@@ -18,9 +18,19 @@ export default defineEventHandler(async (event) => {
     const collection = db.collection("joblistingsCollection"); // Replace with your collection name
 
     // Fetch data (modify query as needed)
-    const data = await collection.find({}).toArray();
+    const jobData = await collection.find({}).toArray();
 
-    return { success: true, data };
+    const companiesCollection = db.collection("companiesCollection");
+
+    // for each job, add the company name using the job.companyId
+    for (let job of jobData) {
+      const company = await companiesCollection.findOne({ _id: job.companyId });
+      job.companyName = company.name;
+    }
+
+    return { success: true, data: jobData };
+
+
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
     return { success: false, error: error.message };
