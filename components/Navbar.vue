@@ -12,7 +12,6 @@
 
                 <ul class="nav col-12 col-lg-auto me-5 mb-2 justify-content-center mb-md-0">
                     <li><NuxtLink to="/" class="nav-link px-3">Home</NuxtLink></li>
-                    <li><NuxtLink to="about" class="nav-link px-3">About</NuxtLink></li>
                     <li><NuxtLink to="jobTracker" class="nav-link px-3">Job Tracker</NuxtLink></li>
                     <li><NuxtLink to="mentorshipHub" class="nav-link px-3">Mentorship Hub</NuxtLink></li>
                     <li><NuxtLink to="resourceLibrary" class="nav-link px-3">Resources</NuxtLink></li>

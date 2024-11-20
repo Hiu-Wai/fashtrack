@@ -10,6 +10,17 @@
             </div>
         </div>
 
+        <div class="my-5">
+            <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <!-- add a search box-->
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search for a job" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+
+            </div>
+        </div>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-5">
 
             <div class="col" v-for="n in 10">
@@ -37,7 +48,9 @@
 </template>
 
 <style>
-
+h1.text-body-emphasis {
+    font-family: 'GFS Didot';
+}
 p.lead {
     font-family: 'Montserrat';
     font-size: 1.4rem;
