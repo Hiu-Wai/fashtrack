@@ -10,7 +10,6 @@
             </div>
         </div>
 
-        {{ jobs }}
 
         <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary rounded-3">
@@ -28,7 +27,7 @@
 
             
                 <div class="col" v-for="job in data">
-                    <NuxtLink :to="'/jobs/' + job._id" style="text-decoration: none;">
+                    <a :href="'/jobs/' + job._id" style="text-decoration: none;">
                     <div class="card shadow-sm">
                         <img v-bind:src="job.coverImage" alt="job image" class="bd-placeholder-img card-img-top"
                             width="100%" height="225" />
@@ -40,7 +39,7 @@
 
                         </div>
                     </div>
-                    </NuxtLink>
+                </a>
                 </div>
           
 
