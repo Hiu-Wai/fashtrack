@@ -1,5 +1,5 @@
 <template>
-    <header class="p-3 mb-3 border-bottom">
+    <header class="p-3 mb-3">
         <div class="container">
 
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -37,5 +37,13 @@
 .nav-link {
     font-family: 'GFS Didot';
     font-size: 1.4rem;
+}
+
+.router-link-exact-active {
+    color: #264759;
+}
+
+.nav-link {
+    color: #4281A4;
 }
 </style>

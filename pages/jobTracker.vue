@@ -3,13 +3,14 @@
 
         <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary rounded-3">
-                <h1 class="text-body-emphasis">Job Tracker</h1>
+                <h1 class="display-3 bigtitle1">Job Tracker</h1>
                 <p class="lead">
                     Find the job with the right fit for you.
                 </p>
             </div>
         </div>
 
+    
         <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary rounded-3">
                 <!-- add a search box-->
@@ -23,7 +24,7 @@
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-5">
 
-            <div class="col" v-for="n in 10">
+            <div class="col" v-for="job in data">
                 <div class="card shadow-sm">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
@@ -33,7 +34,7 @@
                             dy=".3em">Thumbnail</text>
                     </svg>
                     <div class="card-body">
-                        <h5 class="card-title">Company Name</h5>
+                        <h5 class="card-title">{{job.description}}</h5>
                         <h3 class="card-title">Position</h3>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
@@ -50,12 +51,25 @@
 <style>
 h1.text-body-emphasis {
     font-family: 'GFS Didot';
+    color: #194F92;
 }
 p.lead {
     font-family: 'Montserrat';
     font-size: 1.4rem;
+    color: #194F92;
+}
+h1.bigtitle1 { 
+      font-family: 'GFS Didot'; 
 }
 
 
 
 </style>
+
+
+<script setup>
+const { data, pending, error } = useAsyncData('fetch-key', async () => {
+  const response = await $fetch('/api/getJobs');
+  return response.data; // Extract and return the `data` key
+});
+</script>

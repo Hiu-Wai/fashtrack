@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
     await client.connect();
 
     const db = client.db(dbName);
-    const collection = db.collection("TestCollection"); // Replace with your collection name
+    const collection = db.collection("joblistingsCollection"); // Replace with your collection name
 
     // Fetch data (modify query as needed)
     const data = await collection.find({}).toArray();
