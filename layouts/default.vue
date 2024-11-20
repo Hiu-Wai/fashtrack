@@ -2,6 +2,11 @@
     <div>
       <Navbar />
       <slot />
+
+      <br>
+      <br>
+      <br>
+      <!-- world's sh*ttiest padding ! -->
     </div>
   </template>
 
