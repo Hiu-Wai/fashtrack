@@ -5,7 +5,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/"
                     class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    <img src="/logo.png" alt="mdo" width="50" class="rounded-circle">
 
                     <span class="fs-1 navbarTitle ms-3">FashTrack</span>
                 </a>

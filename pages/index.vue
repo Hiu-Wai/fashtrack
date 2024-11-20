@@ -1,13 +1,23 @@
 <template>
     <div class="container">
-        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-tertiary">
-            <div class="col-lg-6 px-0">
-            <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-            <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+        <div class="p-4 p-md-5 mb-4 my-5 rounded text-body-emphasis bg-body-tertiary">
+            <div class="col-lg-8 px-0">
+            <h1 class="display-3 bigtitle">Your journey to the fashion world <b>starts here</b></h1>
+            <h3 class="display-5 bigtitle">Discover opportunities to level up your career in fashion</h3>
+            <br>
+            
+            <NuxtLink to="/jobTracker">
+            <button class="btn btn-primary rounded btn-lg">Job Tracker</button>
+            </NuxtLink> 
             </div>
         </div>
 
 
     </div>
 </template>
+
+<style>
+h1.bigtitle { 
+      font-family: 'Montserrat'; 
+}
+</style>
