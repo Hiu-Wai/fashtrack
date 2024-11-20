@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'GFS+Didot': true,
-      'montserrat' : true
+      'Montserrat' : true
     }
   },
   compatibilityDate: '2024-04-03',
