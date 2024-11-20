@@ -14,7 +14,7 @@
             <hr>
             <div class="row">
                 <div class="col-lg-4" v-for = "mentor in data">
-                    <NuxtLink :to="'/mentors/' + mentor._id" style="text-decoration: none;">
+                    <NuxtLink :to="mentor.image" style="text-decoration: none;">
                     <img class="bd-placeholder-img rounded-circle" width="140" height="140" v-bind:src="mentor.image" alt="job image" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
                     <h2 class="fw-normal">{{ mentor.name }}</h2>
                     <h3 class = "fw-normal">{{ mentor.company }}</h3>
