@@ -10,9 +10,7 @@
 
         <div class="my-5">
             <div class="p-5 text-start bg-body-tertiary rounded-3">
-                <h1 class="display-3 bigtitle1" v-if="data">Apply</h1>
-                <h3 class="display-6 smalltitle2" v-if="data">{{ data.jobTitle }} @ {{ data.companyName }}</h3>
-
+                
             </div>
         </div>
 
